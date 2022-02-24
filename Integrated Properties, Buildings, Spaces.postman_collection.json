@@ -1,0 +1,756 @@
+{
+	"info": {
+		"_postman_id": "4fe127f9-17c9-430d-a95a-aa05b989dbf4",
+		"name": "Integrated Properties, Buildings, Spaces",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WorkZones by Portfolio",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"DisplayAs\",\r\n            \"Operator\": \"NotEqual\",\r\n            \"Values\": [\"Corrigo Test\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"Portfolio.DisplayAs\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/workzone",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"workzone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customers by Portfolio",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"DisplayAs\",\r\n            \"Operator\": \"NotEqual\",\r\n            \"Values\": [\"Toluca\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/customer",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Spaces by Customer",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"DisplayAs\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"Toluca\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/customer",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AssetTree",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"Child.Info.SerialNumber\",\r\n            \"Operator\": \"NotEqual\",\r\n            \"Values\": [\"\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\", \"Child.Info.*\"]},\r\n      \"Count\": 2,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/AssetTree",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"AssetTree"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Location by Parent Unit",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"id\",\r\n            \"Operator\": \"equal\",\r\n            \"Values\": [\"3\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/space",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"space"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomField2",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  \r\n {\r\n  \"QueryExpression\":\r\n  {\r\n     \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ObjectTypeId\",\r\n            \"Operator\": \"NotEqual\",\r\n            \"Values\": [\"13\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n     \r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\", \"Descriptor.*\"]},\r\n      \"Count\": 50  ,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/CustomField2",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"CustomField2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WorkZone Assets",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"Number\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"FLOR\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/workzone",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"workzone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grouping Portfolio",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  \r\n  {\r\n      \"QueryExpression\":\r\n  {\r\n     \r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 20,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/Portfolio",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"Portfolio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Location",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"Info.TagId\",\r\n            \"Operator\": \"NotEqual\",\r\n            \"Values\": [\"TagID123\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\", \"Info.*\"]},\r\n      \"Count\": 2,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/Location",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"Location"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

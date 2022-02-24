@@ -1,0 +1,5349 @@
+{
+	"info": {
+		"_postman_id": "a5daa595-8f66-42d6-92d9-593a3b4a620a",
+		"name": "Corrigo Base Api Prod DB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WorkOrder",
+			"item": [
+				{
+					"name": "GET Workorder",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4Ljg3MjciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUdWUsIDI1IEphbiAyMDIyIDE1OjA4OjU2IEdNVCIsIi5leHBpcmVzIjoiVHVlLCAyNSBKYW4gMjAyMiAxNToyODo1NiBHTVQifX19<---->F95Kuzk_Ls6cqEbL-qff-cyPD14k_6NWGKCp8qZgsBlszRxkH2oWwirodhYbDttJse9_xejsyosJyrmnFI6fkXM8MscxvlDPpEzC2j294RqVKGYXLSBWXynd9NV50HAzppO2dbhSCSlaVpXUaNcV7imapqdqUXzAVzsyqdYl-1fVo_kW5QlpREerp8yoZCNi38wmHsrgDoCHj60fvOPMCbZ35qzuuc2Q58eBuDtSzzUZ3OTDkUVn3kcORuzYlNXjwsMwsRgrF5rSnq5Rl26Ks99d8XJMr2B7eup64c2cxzxFsVr6eyC2PJwG3VSVfUd0VIKd7_v1TSaGXJGOdwHBoA",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/WorkOrder?ID=500",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"base",
+								"WorkOrder"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Workorder",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMzUiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJGcmksIDE3IERlYyAyMDIxIDE0OjEzOjI5IEdNVCIsIi5leHBpcmVzIjoiRnJpLCAxNyBEZWMgMjAyMSAxNDozMzoyOSBHTVQifX19<---->aHFB75oGZjG4TfJSmQMUIdlHWRi167J8nciJUYUXoBMFsQcscZ7sraigCk48JmP70pUV32Tdl13rBVS5JlBuXWqgn-3o8Y2GEloY5OzVDIR_cNncCNCFp7dp-YDBDEVIrrEbw7jOc7xy8nGMN5EFcGhxxScv0GNbZVQdw036H4qY2WcKlsvtndKx0fdZRL4lIbNWmesPT18YdQ8iPhKIJHIfxAP0l9NivoNdwI9huuWTOmKsnzm9Il6sBZD8xHXY7r73BmNzKlXmjv8qhmADQMGpvdjJcNVVe7l_XTqoxAc5rj5Se0sk5CfiJr3L0y7Dqg3K_a4tgGqP49Jq6dBgfw",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\": [\"Workorder\"],\r\n    \"Entity\": {\r\n        \"ID\": 2,\r\n        \"ContactName\": \"asdfasdf123@gmail.com\"\r\n    },\r\n    \"Comment\": \"test\",\r\n    \"ConcurrencyId\": 0\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/WorkOrder",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"WorkOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete WorkOrder",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMDciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJNb24sIDIwIERlYyAyMDIxIDEwOjE3OjAzIEdNVCIsIi5leHBpcmVzIjoiTW9uLCAyMCBEZWMgMjAyMSAxMDozNzowMyBHTVQifX19<---->CucKJzdJuBGFYUMRSwKU6jxrmn74OIbwTfNArzWx0wd5Bv9uavGj7BGKfixcvlvOOiez-Mr5tuYMpeDdNoiPl8qQnQ9fjlvrm36VeJhL7D6qN3aPu-gDVZ7In7G9qsXww73FuzR06DR2jV_r6iVFPP_-4QP9G8QA4ZUoqEInrg7rt-_foek1fYFXPunOBhQjxyEq04kHs985_9pMckQJuchQRBt_zbQybpx_j2C3bVm-ef9F1r9I2F3XfpYsX6IUn7B8KGSh4dw-eNnlzthdrR0uuXbkGVnYgNlzW8XjoqPdQr_TmSYKLgPaOjTI3fn-oVmsrmOZJuwKchSIHmdymQ",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/WorkOrder?ID=500",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"WorkOrder"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "ID",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Command Workorder",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4Ljg3MjciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUaHUsIDI3IEphbiAyMDIyIDExOjA5OjEyIEdNVCIsIi5leHBpcmVzIjoiVGh1LCAyNyBKYW4gMjAyMiAxMToyOToxMiBHTVQifX19<---->YfeqPf_pdo_zlaoWcVbGkmBX6hVT3gokPyQjmzi_8kMBbt-339kQCHEr7HuOT8HnOQHaggMUJstddKoXJh58B10OdOkTN89iquXUwTepdAB7BtdAE-xIsOOqC2s-OTRZBtl8KZVDB1MmEtCFx7SgHCe_z7LT7UJPrnwS9a9fVRUu3iy86nrA_6cpq0mbhvG8OKQCfMsQn0SqjzSLhA3aEEMTLCSEb57t5M1fJdBqpwjAKisvXgKYqkkX1pYvu9kJmL0HGMYgC9TcS70bqmTU9Dp33vukNZV-J-DWJ2naHL3QXykqnh87i5hYsyHTjh4nXPtcODg-Z-VIQ--M5NdJZw",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Command\" : {\r\n      \"WorkOrder\" : {\r\n         \"Items\" : [\r\n            {\r\n               \"Asset\" : {\r\n                  \"Id\" : 12584\r\n               },\r\n               \"Task\" : {\r\n                  \"Id\" : 14389\r\n               }\r\n            }\r\n         ],\r\n         \"ContactName\" : \"Store Manager or General Manager \",\r\n         \"ContactAddress\" : {\r\n            \"AddrTypeId\" : \"Contact\",\r\n            \"Address\" : \"214-555-5555\"\r\n         },\r\n         \"TypeCategory\" : 4,\r\n         \"Priority\" : {\r\n            \"Id\" : 1\r\n         },\r\n         \"RequestorContact\" : {\r\n            \"Id\" : 3\r\n         },\r\n         \"WorkZone\" : {\r\n            \"Id\" : 1\r\n         },\r\n         \"SubType\" : {\r\n            \"Id\" : 259\r\n         },\r\n         \"Customer\" : {\r\n            \"Id\" : 3\r\n         }\r\n      },\r\n      \"ComputeSchedule\" : true,\r\n      \"ComputeAssignment\" : true,\r\n      \"EmergencyDisabled\" : false,\r\n      \"Comment\" : \"Creation Comment here\"\r\n   },\r\n   \"RequestId\" : \"1234\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/cmd/Workorder/Create",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cmd",
+								"Workorder",
+								"Create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by WO ID",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LmNjMTYiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUaHUsIDIzIERlYyAyMDIxIDEzOjE5OjI3IEdNVCIsIi5leHBpcmVzIjoiVGh1LCAyMyBEZWMgMjAyMSAxMzozOToyNyBHTVQifX19<---->TEhFoKXzKy36D6OE_31_LF4g09mhg2kigv91I7bFE2YRLXyT_LFFDccv9RLIdRJ7OEipDwpvbtq-5VRkdHezpXC-Bo0PT0T7WfNm-KUqBObm1VPLuwmnnfgQ8eolLsMqyS9PDvRuZTEwJVcsk4y2pN1dEBwMMccmBBiLCnDIe5X81w0ACy9dRS9JuKQ5186qGlkgch9NlJSAMGOQ7a30j2Ga4xQlLusk65eYK3T9s-yNLTGo46RFafntE0LQW6HE8RzW8tPKN5-cbnNMZHCAWqiOSRGiqFQ4whPVP-o4Aqp3QdzeXb7wSyibNNX0Js1J3zW9eJtYRHEBVwVkoXJbYQ",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ID\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"1\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/query/WorkOrder",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"query",
+								"WorkOrder"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by Last Action",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"LastActionDateUtc\",\r\n            \"Operator\": \"GreaterOrEqual\",\r\n            \"Values\": [\"2021-11-04T17:30:00\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/query/WorkOrder?=",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"query",
+								"WorkOrder"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact",
+			"item": [
+				{
+					"name": "Get Contact",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LmYzMDIiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUaHUsIDEwIEZlYiAyMDIyIDA0OjI4OjA0IEdNVCIsIi5leHBpcmVzIjoiVGh1LCAxMCBGZWIgMjAyMiAwNDo0ODowNCBHTVQifX19<---->i9GP_7VFP0C5zSKvKJivUaZuMBcd9VNWPXhBE3KF5lAvw2DdJCQRT7zZTJRDaUyB9JaeqMEaDvKA5nb1e8trUrXdZ5exsaYNeavwlVXDCFKJR_hJonx0MYzKahyeuJwbPhHgDe9qWwGeSc5MB_qQFQ0Igpg7oJynBmvPBAU5khgxmYtbau9Rk3sHBwQNrGjeRabpW95ZiXJ_SoO1AMbJCytcTJkNk4DrlnVAxgoXFev1v5GKMsSnnV5CzXDirOspnjoU9pvnA1NrYUc5zN2mL5fuBR5LaHZ04wuJVsI5c79oEEycKU7bMhFgimhfPWDn_OkyAWS0Tx6ZhQB1JhYUdQ",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "GenericToken",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Contact/500",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"base",
+								"Contact",
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Contact",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMzUiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJNb24sIDIwIERlYyAyMDIxIDA4OjU2OjM3IEdNVCIsIi5leHBpcmVzIjoiTW9uLCAyMCBEZWMgMjAyMSAwOToxNjozNyBHTVQifX19<---->QRhsRxKxhVPzqD1DKrv1eOtObmeYlIJ1Pv6XjYBGO5buVBaSEBOzK8l0wsnAuDlcqoN8ewclQUsw4cMh-9wLh6IZotslY0BNxkgOHS7nxpnmh6Ua1WH_BZIHkX6sUgjEOslalIeRa_kyCRn4xOKOMGCwIf3jb7hIPxCNa97qMvIRAmTHMgM2piBg8iKKxXRQ9oUtvJrtktND495Vd0F-HVa_ausWx9WzDso4xDxf_Zkg-gKHaNPBN0Jniyn9oGTj_UzOEwzzxZXKz3MDmeC6b4HuAiXRsuArvTNjsviuqAXCn07L10yGvvWB4YVxD6wZcgEWkNVKmMdAahhg6Gpe_w",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Entity\": {\r\n    \"FirstName\": \"Test API1\",\r\n    \"LastName\": \"API Test2\",\r\n    \"TypeId\": 3,\r\n    \"CustomerId\": 371,\r\n    \"CanViewAnyRequest\": true,\r\n    \"CanCreateRequest\": true,\r\n    \"PriorityThreshold\": 255,\r\n    \"CustomFields\": [],\r\n    \"ContactAddresses\": [],\r\n    \"GroupsBridge\": [],\r\n    \"Username\": \"API_Test1\",\r\n    \"Number\": \"\",\r\n    \"MustResetPassword\": false,\r\n    \"NoAlertEmails\": false,\r\n    \"Comment\": \"\",\r\n    \"UnlimitedRequest\": false,\r\n    \"UnlimitedAuthorization\": false,\r\n    \"SupervisorId\": 0,\r\n    \"LanguageId\": 0,\r\n    \"CustomerNoteAccessId\": 2,\r\n    \"NoPwdExpirationAlert\": false,\r\n    \"Currencies\": [],\r\n    \"IsRemoved\": false,\r\n    \"ConcurrencyId\": 4,\r\n    \"Id\": 0\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Contact",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"base",
+								"Contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Contact",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMzUiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJNb24sIDIwIERlYyAyMDIxIDA5OjAwOjAzIEdNVCIsIi5leHBpcmVzIjoiTW9uLCAyMCBEZWMgMjAyMSAwOToyMDowMyBHTVQifX19<---->k1aAYOJpn7WhdSdqaKG1a6tLqyxxpWD6o6TCuWtZXj9n3B3GdR1YPzJtOobetG99oKblbfwmsB0kDN323aDi1wOLrJb4c32hhJR89Exu_lQLLScPda6RTz6_Pe6Zl5CpijHMCRVcUJWFuMHuskyabbJwdSsfeeuXYLepsngVXm13z9h5_-MUQxKRfSnSOAuwTylJqCa73x2ngLZZtzwVD5G4rWSlbQgR_hVLtX8gipJ34pKeD5lXI3uU-uq8iNr4v5GPEIwUTs7eyNAAQJ9IJ8_PyTkGqKhGJ-okOK75RsJ7nKqEpNFdMJInz-eeUaLH41ga4Ac7AGQpLYD8RezQfA",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"Properties\" : [\"*\"] ,\r\n                \"Entity\":\r\n                {\r\n                             \"Id\": 500,\r\n                     \"Comment\": \"Test 2\",\r\n                     \"FirstName\": \"David1\",\r\n                     \"LastName\": \"Baldi1\",\r\n                     \"UserName\":\"DavBaldi\",\r\n                     \"Number\": \"1\",\r\n                     \"CustomerNoteAccessid\":\"View\"\r\n                }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Contact",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"base",
+								"Contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contact",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Contact/500?",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Contact",
+								"500"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by Email",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ContactAddresses.Address\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"test2@qa.corrigo.com\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\", \"ContactAddresses.*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/query/Contact",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"query",
+								"Contact"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customer",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMDciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJNb24sIDIwIERlYyAyMDIxIDEwOjU0OjI2IEdNVCIsIi5leHBpcmVzIjoiTW9uLCAyMCBEZWMgMjAyMSAxMToxNDoyNiBHTVQifX19<---->BHuseAJNkTShnPtXWm5VsCWkVDo0DntNEl_E4Sr3Tf5AxxNq59F9_mzptd7aGPMRatTW7-UFOV3nFOnYZk3W1eSx_qOEJRy2CNTubPoOWnb8CJtihRO1mtSnWy5wAYQP6XSdkaJb_uhB-mqhR6nsSHjWL6jbj4At-fRSVXc_UWRUPqBBZVC1Ii8rH5ZL-HqH_NsC-GK7sJ8mbg1lluE8bHUzc4E8nOh2OXkdUzK2rPSYhCe-8xtaY8pmlhcSpv-h_pN6uUPzBNuFEa8qpV8lgy1NPU5KoSemHDp1hAx0zt-ZY5OJUsoOgHQTlfReHBK1NzxChsM6dj6Bxv0cr_ynsg",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Customer/3",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Customer",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Customer",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Entity\": {\r\n         \"DisplayAs\": \"FL - FLOR (Orlando)\",\r\n        \"Name\": \"FL - FLOR (Orlando)\",\r\n        \"WorkZone\": {\r\n            \"DisplayAs\": \"\",\r\n            \"TimeZone\": 0,\r\n            \"LanguageId\": 0,\r\n            \"WoNumberPrefix\": \"\",\r\n            \"Entity\": \"\",\r\n            \"SchedulingWindow\": 0,\r\n            \"NoIncompleteProcedure\": false,\r\n            \"AccessOptionsMask\": 0,\r\n            \"Number\": \"\",\r\n            \"AdvanceNotice\": 0,\r\n            \"WoNumberDigits\": 0,\r\n            \"RoundApptTimeTo\": 0,\r\n            \"WorkPlanAutoCancel\": false,\r\n            \"WorkPlanChildResolution\": false,\r\n            \"WorkPlanAutoDependency\": false,\r\n            \"CpThemeId\": 0,\r\n            \"DefaultAccess\": \"Unknown\",\r\n            \"AutoAssignEnabled\": false,\r\n            \"BackupRoutingId\": \"Unassigned\",\r\n            \"NoIncompleteItem\": false,\r\n            \"UiShowProvidersFirst\": false,\r\n            \"CurrencyTypeId\": \"Unknown\",\r\n            \"IsOffline\": false,\r\n            \"ContactAddresses\": [],\r\n            \"CustomFields\": [],\r\n            \"Portfolios\": [],\r\n            \"SlaValues\": [],\r\n            \"Teams\": [],\r\n            \"BizHours\": [],\r\n            \"EscalationRules\": [],\r\n            \"SpecDispatchRules\": [],\r\n            \"OnCallRules\": [],\r\n            \"Responsibilities\": [],\r\n            \"UseBizHours\": false,\r\n            \"UseHolidays\": false,\r\n            \"UseOnCall\": false,\r\n            \"UseEscalation\": false,\r\n            \"DefaultBillToLogic\": 0,\r\n            \"TurnKickOffAuto\": false,\r\n            \"TurnKickOffLagDays\": 0,\r\n            \"TurnKickOffOnDays\": 0,\r\n            \"EarliestSlot\": 0,\r\n            \"LatestSlot\": 0,\r\n            \"SlotsCount\": 0,\r\n            \"IsPrecalculatedSchedule\": false,\r\n            \"AllowTimePreference\": false,\r\n            \"TurnTemplateId\": 0,\r\n            \"IsmSpecGroupId\": 0,\r\n            \"IsmUrl\": \"\",\r\n            \"ExcludeNonCompliantProviders\": \"InheritGlobalSettings\",\r\n            \"IsNteAuto\": true,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 1,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Dba\": \"FL - FLOR (Orlando)\",\r\n        \"Instructions\": \"\",\r\n        \"TenantCode\": \"A0001234\",\r\n        \"TaxExempt\": false,\r\n        \"Spaces\": [],\r\n        \"Contacts\": [],\r\n        \"CustomFields\": [],\r\n        \"Notes\": [],\r\n        \"Addresses\": [],\r\n        \"GroupsBridge\": [],\r\n        \"ApprovalScopes\": [],\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 25,\r\n        \"Id\": 0,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Customer",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Customer"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Customer",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"Properties\" : [\"*\"] ,\r\n                \"Entity\": {\r\n         \"DisplayAs\": \"FL - FLOR (Orlando)\",\r\n        \"Name\": \"FL - FLOR (Orlando)\",\r\n        \"WorkZone\": {\r\n            \"DisplayAs\": \"\",\r\n            \"TimeZone\": 0,\r\n            \"LanguageId\": 0,\r\n            \"WoNumberPrefix\": \"\",\r\n            \"Entity\": \"\",\r\n            \"SchedulingWindow\": 0,\r\n            \"NoIncompleteProcedure\": false,\r\n            \"AccessOptionsMask\": 0,\r\n            \"Number\": \"\",\r\n            \"AdvanceNotice\": 0,\r\n            \"WoNumberDigits\": 0,\r\n            \"RoundApptTimeTo\": 0,\r\n            \"WorkPlanAutoCancel\": false,\r\n            \"WorkPlanChildResolution\": false,\r\n            \"WorkPlanAutoDependency\": false,\r\n            \"CpThemeId\": 0,\r\n            \"DefaultAccess\": \"Unknown\",\r\n            \"AutoAssignEnabled\": false,\r\n            \"BackupRoutingId\": \"Unassigned\",\r\n            \"NoIncompleteItem\": false,\r\n            \"UiShowProvidersFirst\": false,\r\n            \"CurrencyTypeId\": \"Unknown\",\r\n            \"IsOffline\": false,\r\n            \"ContactAddresses\": [],\r\n            \"CustomFields\": [],\r\n            \"Portfolios\": [],\r\n            \"SlaValues\": [],\r\n            \"Teams\": [],\r\n            \"BizHours\": [],\r\n            \"EscalationRules\": [],\r\n            \"SpecDispatchRules\": [],\r\n            \"OnCallRules\": [],\r\n            \"Responsibilities\": [],\r\n            \"UseBizHours\": false,\r\n            \"UseHolidays\": false,\r\n            \"UseOnCall\": false,\r\n            \"UseEscalation\": false,\r\n            \"DefaultBillToLogic\": 0,\r\n            \"TurnKickOffAuto\": false,\r\n            \"TurnKickOffLagDays\": 0,\r\n            \"TurnKickOffOnDays\": 0,\r\n            \"EarliestSlot\": 0,\r\n            \"LatestSlot\": 0,\r\n            \"SlotsCount\": 0,\r\n            \"IsPrecalculatedSchedule\": false,\r\n            \"AllowTimePreference\": false,\r\n            \"TurnTemplateId\": 0,\r\n            \"IsmSpecGroupId\": 0,\r\n            \"IsmUrl\": \"\",\r\n            \"ExcludeNonCompliantProviders\": \"InheritGlobalSettings\",\r\n            \"IsNteAuto\": true,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 1,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Dba\": \"FL - FLOR (Orlando)\",\r\n        \"Instructions\": \"\",\r\n        \"TenantCode\": \"A0001\",\r\n        \"TaxExempt\": false,\r\n        \"Spaces\": [],\r\n        \"Contacts\": [],\r\n        \"CustomFields\": [],\r\n        \"Notes\": [],\r\n        \"Addresses\": [],\r\n        \"GroupsBridge\": [],\r\n        \"ApprovalScopes\": [],\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 25,\r\n        \"Id\": 3,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Customer",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Customer/8599",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"base",
+								"Customer",
+								"8599"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by Tenantcode",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LmNjMTYiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUaHUsIDIzIERlYyAyMDIxIDEzOjIwOjU4IEdNVCIsIi5leHBpcmVzIjoiVGh1LCAyMyBEZWMgMjAyMSAxMzo0MDo1OCBHTVQifX19<---->HxCizMnWtvJkdKfEr6HdorIXQmd5lYpA4ouHBCmftz5wSZh2N_F3FKYfFqWbxTV4Hkb4ueuwOazIR2xK0_oHFbXJlJkR-7OdkCCRS7SP2TtFxwZR6actmpVARs5-jVHgoCDOl1PpvG_nkc0vAMy5ygOe4tU_dLzuuUxz1Z4pJZXgqERbqmSXmWp05krY_OvXj7EtdjVqW-fstt3BGqPXT1ZGde-IxsSTjfiO1L4IZNU3sgaFVD7JnOZchCDOcj3Lf28e8zO5gymfDLTtEN2XgkHQpEM5f-o-IQVfadlDECXdZ--tjeICRRR26dGbiGYGP5H_JWzN0uJq-YKU4cV5Rg",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"TenantCode\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"12345\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/query/Customer",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"query",
+								"Customer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Workzone",
+			"item": [
+				{
+					"name": "Get Workzone",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMDciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJNb24sIDIwIERlYyAyMDIxIDEwOjU4OjE0IEdNVCIsIi5leHBpcmVzIjoiTW9uLCAyMCBEZWMgMjAyMSAxMToxODoxNCBHTVQifX19<---->BZh1uiDYbC_74ivRQZnBlnz9pFmTtnKsd1CRc2mhGVSWWmurqIvyg-CiDFZBGols_DV8PgmO9nG7CXga2EBzX-72bpFGViN9rrXJN8Jc7IeW3wfwzu1_kInJsAso8jyUxBlfCj9Tm0w0gqeM9nBAQyGjsxp54wGOUnWOwWXRuwa52LvhEmBXJT2EvWtQi1haJaHKxIkOLsDoNojlvBYWdNvLKAHpSile2b33e7_atyciqsGE-P6kw7Njv_B_kt_3jTLh0HDz6Dg0_NhuoU6PWxQChoOEjBMMzG6cWTHedLMyYs-_TjPwEpy-UA2NjcyLYFYPzROsGWONqblFrvfa9Q",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Workzone/1",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Workzone",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Workzone",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Entity\": {\r\n        \"DisplayAs\": \"0Corrigo Test\",\r\n        \"Asset\": {\r\n            \"Name\": \"\",\r\n            \"ModelId\": 0,\r\n            \"Orphan\": false,\r\n            \"TypeId\": \"Unknown\",\r\n            \"ParentId\": 0,\r\n            \"RootId\": 0,\r\n            \"IsTemplate\": false,\r\n            \"Documents\": [],\r\n            \"IsOffline\": false,\r\n            \"IsLocked\": false,\r\n            \"Attributes\": [],\r\n            \"Id\": 194,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"TimeZone\": 4,\r\n        \"LanguageId\": 1033,\r\n        \"WoNumberPrefix\": \"TL\",\r\n        \"Entity\": \"Corrigo\",\r\n        \"SchedulingWindow\": 120,\r\n        \"NoIncompleteProcedure\": false,\r\n        \"AccessOptionsMask\": 15,\r\n        \"Number\": \"1234\",\r\n        \"AdvanceNotice\": 24,\r\n        \"TaxRegion\": {\r\n            \"Items\": [],\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 1,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"WoNumberDigits\": 4,\r\n        \"RoundApptTimeTo\": 60,\r\n        \"WorkPlanAutoCancel\": false,\r\n        \"WorkPlanChildResolution\": false,\r\n        \"WorkPlanAutoDependency\": false,\r\n        \"CpThemeId\": 2,\r\n        \"DefaultAccess\": \"NotApplicable\",\r\n        \"AutoAssignEnabled\": true,\r\n        \"BackupRoutingId\": \"Default\",\r\n        \"NoIncompleteItem\": false,\r\n        \"UiShowProvidersFirst\": true,\r\n        \"CurrencyTypeId\": \"USD\",\r\n        \"IsOffline\": false,\r\n        \"ContactAddresses\": [],\r\n        \"CustomFields\": [],\r\n        \"Portfolios\": [],\r\n        \"SlaValues\": [],\r\n        \"Teams\": [],\r\n        \"BizHours\": [],\r\n        \"EscalationRules\": [],\r\n        \"SpecDispatchRules\": [],\r\n        \"OnCallRules\": [],\r\n        \"Responsibilities\": [],\r\n        \"UseBizHours\": true,\r\n        \"UseHolidays\": true,\r\n        \"UseOnCall\": true,\r\n        \"UseEscalation\": true,\r\n        \"DefaultBillToLogic\": 1,\r\n        \"TurnKickOffAuto\": true,\r\n        \"TurnKickOffLagDays\": 10,\r\n        \"TurnKickOffOnDays\": 127,\r\n        \"EarliestSlot\": 1,\r\n        \"LatestSlot\": 7,\r\n        \"SlotsCount\": 3,\r\n        \"IsPrecalculatedSchedule\": false,\r\n        \"AllowTimePreference\": false,\r\n        \"TurnTemplateId\": 0,\r\n        \"IsmSpecGroupId\": 0,\r\n        \"IsmUrl\": \"\",\r\n        \"ExcludeNonCompliantProviders\": \"InheritGlobalSettings\",\r\n        \"IsNteAuto\": true,\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 62,\r\n        \"Id\": 1,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Workzone",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Workzone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Workzone",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"Properties\" : [\"*\"] ,\r\n                \"Entity\": {\r\n                       \"DisplayAs\": \"FL - FLOR (Orlando)\",\r\n        \"Asset\": {\r\n            \"Name\": \"\",\r\n            \"ModelId\": 0,\r\n            \"Orphan\": false,\r\n            \"TypeId\": \"Unknown\",\r\n            \"ParentId\": 0,\r\n            \"RootId\": 0,\r\n            \"IsTemplate\": false,\r\n            \"Documents\": [],\r\n            \"IsOffline\": false,\r\n            \"IsLocked\": false,\r\n            \"Attributes\": [],\r\n            \"Id\": 1153,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"TimeZone\": 35,\r\n        \"LanguageId\": 1033,\r\n        \"WoNumberPrefix\": \"ASN001\",\r\n        \"Entity\": \"Asurion\",\r\n        \"SchedulingWindow\": 15,\r\n        \"NoIncompleteProcedure\": false,\r\n        \"AccessOptionsMask\": 8,\r\n        \"Number\": \"FLOR\",\r\n        \"AdvanceNotice\": 0,\r\n        \"TaxRegion\": {\r\n            \"Items\": [],\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 158470,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"WoNumberDigits\": 4,\r\n        \"RoundApptTimeTo\": 60,\r\n        \"WorkPlanAutoCancel\": false,\r\n        \"WorkPlanChildResolution\": false,\r\n        \"WorkPlanAutoDependency\": false,\r\n        \"CpThemeId\": 0,\r\n        \"DefaultAccess\": \"NotApplicable\",\r\n        \"AutoAssignEnabled\": false,\r\n        \"BackupRoutingId\": \"Default\",\r\n        \"NoIncompleteItem\": false,\r\n        \"UiShowProvidersFirst\": false,\r\n        \"CurrencyTypeId\": \"USD\",\r\n        \"IsOffline\": false,\r\n        \"ContactAddresses\": [],\r\n        \"CustomFields\": [],\r\n        \"Portfolios\": [],\r\n        \"SlaValues\": [],\r\n        \"Teams\": [],\r\n        \"BizHours\": [],\r\n        \"EscalationRules\": [],\r\n        \"SpecDispatchRules\": [],\r\n        \"OnCallRules\": [],\r\n        \"Responsibilities\": [],\r\n        \"UseBizHours\": true,\r\n        \"UseHolidays\": true,\r\n        \"UseOnCall\": true,\r\n        \"UseEscalation\": true,\r\n        \"DefaultBillToLogic\": 0,\r\n        \"TurnKickOffAuto\": false,\r\n        \"TurnKickOffLagDays\": 6,\r\n        \"TurnKickOffOnDays\": 62,\r\n        \"EarliestSlot\": 1,\r\n        \"LatestSlot\": 7,\r\n        \"SlotsCount\": 3,\r\n        \"IsPrecalculatedSchedule\": false,\r\n        \"AllowTimePreference\": false,\r\n        \"TurnTemplateId\": 0,\r\n        \"IsmSpecGroupId\": 0,\r\n        \"IsmUrl\": \"\",\r\n        \"ExcludeNonCompliantProviders\": \"InheritGlobalSettings\",\r\n        \"IsNteAuto\": true,\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 35,\r\n        \"Id\": 1,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Workzone",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Workzone"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Workzone",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMDciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJNb24sIDIwIERlYyAyMDIxIDEwOjE3OjAzIEdNVCIsIi5leHBpcmVzIjoiTW9uLCAyMCBEZWMgMjAyMSAxMDozNzowMyBHTVQifX19<---->CucKJzdJuBGFYUMRSwKU6jxrmn74OIbwTfNArzWx0wd5Bv9uavGj7BGKfixcvlvOOiez-Mr5tuYMpeDdNoiPl8qQnQ9fjlvrm36VeJhL7D6qN3aPu-gDVZ7In7G9qsXww73FuzR06DR2jV_r6iVFPP_-4QP9G8QA4ZUoqEInrg7rt-_foek1fYFXPunOBhQjxyEq04kHs985_9pMckQJuchQRBt_zbQybpx_j2C3bVm-ef9F1r9I2F3XfpYsX6IUn7B8KGSh4dw-eNnlzthdrR0uuXbkGVnYgNlzW8XjoqPdQr_TmSYKLgPaOjTI3fn-oVmsrmOZJuwKchSIHmdymQ",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Command\" : {\r\n      \"Workzone\" : {\r\n         \"id\":500\r\n   },\r\n   \"RequestId\" : \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/cmd/Workzone/delete",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"cmd",
+								"Workzone",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get Employee",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Employee/15",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Employee",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Employee",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "accessToken",
+									"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LmI5ZmUiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJXZWQsIDI5IERlYyAyMDIxIDA2OjUwOjUwIEdNVCIsIi5leHBpcmVzIjoiV2VkLCAyOSBEZWMgMjAyMSAwNzoxMDo1MCBHTVQifX19<---->2yQI8aIM_oTAcvNgzyIQk8MNbfXjPKGzUh70lGkiMHuhQEi4VqucT4YBd7A4ATtpL3hRnnD39sQaY2o8jg6h82FydaMQWCLNnjG6-8A8eWgYcGZQdCoGubvzNgzaIHJINV0jbsyqiq5abDnMrft5CfW8WX23QU5gMH6ie00urKUpXxJDKD9t9PLg5uK4qSLaPi5wA0CubfsyLkHHECw2OJes40HpQ_g_52lUlRSr53PbQ5-p8vmpOWXJd-MI2i0psWsAF83Fzxb9kqUdTu99P8bkx0mkla8MG-BqjSzQY3srQIcsrSSPH1y4KEjfyekVC4UYmUzrUbnFeDjc4TxIow",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Entity\": {\r\n    \"FirstName\": \"Erik\",\r\n        \"LastName\": \"Blomberg\",\r\n        \"DisplayAs\": \"1Blomberg, Erik\",\r\n        \"Role\":{ \"Id\":1},\r\n        \"AccessToAllWorkZones\": false,\r\n        \"LanguageId\": 1033,\r\n        \"ActorTypeId\": \"Employee\",\r\n        \"Username\": \"177ce294-8d83-4d23-af03-e7cab6caa33e\",\r\n        \"DtPwdChange\": \"2016-07-11T00:00:00\",\r\n        \"Instructions\": \"2\",\r\n        \"WonMemberId\": 0,\r\n        \"WonLocationId\": 0,\r\n        \"WonServiceRadius\": 0,\r\n        \"IsElectronicPayment\": false,\r\n        \"ProviderStatusId\": \"NA\",\r\n        \"LabelId\": 0,\r\n        \"FreeTextAllowed\": true,\r\n        \"RadiusUnit\": \"Mile\",\r\n        \"Password\": \"Password@123\",\r\n        \"Number\": \"4\",\r\n        \"JobTitle\": \"test\",\r\n        \"FederalId\": \"\",\r\n        \"ExternalId\": \"\",\r\n        \"ForcePasswordReset\": false,\r\n        \"TaxWarnOnly\": false,\r\n        \"PriceLists\": [],\r\n        \"CustomFields\": [],\r\n        \"BillAtZero\": false,\r\n        \"IsSupplier\": false,\r\n        \"ProviderTypeId\": \"Regular\",\r\n        \"ContactAddresses\": [],\r\n        \"Teams\": [],\r\n        \"WorkZones\": [],\r\n        \"Portfolios\": [],\r\n        \"CustomerGroups\": [],\r\n        \"Specialties\": [],\r\n        \"PayRates\": [],\r\n        \"StockLocations\": [],\r\n        \"Services\": [],\r\n        \"AlertSubscriptions\": [],\r\n        \"TaxExempt\": false,\r\n        \"LimitAssignmentByPortfolioId\": 0,\r\n        \"IsRemoved\": true,\r\n        \"ConcurrencyId\": 4,\r\n        \"Id\": 5,     \r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Employee",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Employee",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n                \"Properties\" : [\"*\"] ,\r\n                \"Entity\":\r\n                {\r\n        \"FirstName\": \"Erik\",\r\n        \"LastName\": \"Blomberg\",\r\n        \"DisplayAs\": \"1Blomberg, Erik\",\r\n        \"Role\":{ \"Id\":1},\r\n        \"AccessToAllWorkZones\": false,\r\n        \"LanguageId\": 1033,\r\n        \"ActorTypeId\": \"Employee\",\r\n        \"Username\": \"177ce294-8d83-4d23-af03-e7cab6caa33d\",\r\n        \"DtPwdChange\": \"2016-07-11T00:00:00\",\r\n        \"Instructions\": \"2\",\r\n        \"WonMemberId\": 0,\r\n        \"WonLocationId\": 0,\r\n        \"WonServiceRadius\": 0,\r\n        \"IsElectronicPayment\": false,\r\n        \"ProviderStatusId\": \"NA\",\r\n        \"LabelId\": 0,\r\n        \"FreeTextAllowed\": true,\r\n        \"RadiusUnit\": \"Mile\",\r\n        \"Password\": \"Password@123\",\r\n        \"Number\": \"123\",\r\n        \"JobTitle\": \"test\",\r\n        \"FederalId\": \"\",\r\n        \"ExternalId\": \"\",\r\n        \"ForcePasswordReset\": false,\r\n        \"TaxWarnOnly\": false,\r\n        \"PriceLists\": [],\r\n        \"CustomFields\": [],\r\n        \"BillAtZero\": false,\r\n        \"IsSupplier\": false,\r\n        \"ProviderTypeId\": \"Regular\",\r\n        \"ContactAddresses\": [],\r\n        \"Teams\": [],\r\n        \"WorkZones\": [],\r\n        \"Portfolios\": [],\r\n        \"CustomerGroups\": [],\r\n        \"Specialties\": [],\r\n        \"PayRates\": [],\r\n        \"StockLocations\": [],\r\n        \"Services\": [],\r\n        \"AlertSubscriptions\": [],\r\n        \"TaxExempt\": false,\r\n        \"LimitAssignmentByPortfolioId\": 0,\r\n        \"IsRemoved\": true,\r\n        \"ConcurrencyId\": 4,\r\n        \"Id\": 5,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Employee",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Employee/2",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"base",
+								"Employee",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query by ID",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "tokenType",
+									"value": "bearer",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ID\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"1\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/query/Employee",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"query",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BillingAccount",
+			"item": [
+				{
+					"name": "Get BillingAccount",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/BillingAccount?ID=3",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"BillingAccount"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete BillingAccount",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/BillingAccount?ID=1",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"BillingAccount"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post BillingAccount",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Entity\":{      \r\n         \"DisplayAs\": \"ARB_Samples12\",\r\n        \"CpThemeId\": 1,\r\n        \"IsBillAcct\": true,\r\n        \"Number\": \"2577-ARB12\",\r\n        \"PaymentTerms\": \"\",\r\n        \"PaymentNumberOfDays\": 1,\r\n        \"PaymentInstrustions\": \"\",\r\n        \"IsCreditHold\": false,\r\n        \"AccrualMargin\": 0,\r\n        \"SalesRep\": \"\",\r\n        \"IsTaxExempt\": false,\r\n        \"Balance\": 0.0000,\r\n        \"PayDayType\": 1,\r\n        \"PayDayNumber\": 1,\r\n        \"IsSelfSelect\": false,\r\n        \"CurrencyTypeId\": \"USD\",\r\n        \"Users\": [],\r\n        \"Customers\": [],\r\n        \"Contacts\": [],\r\n        \"CustomFields\": [],\r\n        \"Notes\": [],\r\n        \"SynchronizeNte\": false,\r\n        \"IsRemoved\": true,\r\n        \"ConcurrencyId\": 2,\r\n        \"Id\": 0,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n        }\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/BillingAccount",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"BillingAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put BillingAccount",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n                \"Properties\" : [\"*\"] ,\r\n                \"Entity\": {\r\n                      \"DisplayAs\": \"ARB_Sampless\",\r\n        \"CpThemeId\": 1,\r\n        \"IsBillAcct\": true,\r\n        \"Number\": \"2578-ARB\",\r\n        \"PaymentTerms\": \"\",\r\n        \"PaymentNumberOfDays\": 1,\r\n        \"PaymentInstrustions\": \"\",\r\n        \"IsCreditHold\": false,\r\n        \"AccrualMargin\": 0,\r\n        \"SalesRep\": \"\",\r\n        \"IsTaxExempt\": false,\r\n        \"Balance\": 0.0000,\r\n        \"PayDayType\": 1,\r\n        \"PayDayNumber\": 1,\r\n        \"IsSelfSelect\": false,\r\n        \"CurrencyTypeId\": \"USD\",\r\n        \"Users\": [],\r\n        \"Customers\": [],\r\n        \"Contacts\": [],\r\n        \"CustomFields\": [],\r\n        \"Notes\": [],\r\n        \"SynchronizeNte\": false,\r\n        \"IsRemoved\": true,\r\n        \"ConcurrencyId\": 2,\r\n        \"Id\": 248,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n                }\r\n                \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/BillingAccount",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"BillingAccount"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CustomField2",
+			"item": [
+				{
+					"name": "Get CustomField2",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/CustomField2?ID=4",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"CustomField2"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete CustomField2",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/CustomField2?ID=4",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"CustomField2"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post CustomField2",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\": {\r\n        \"Descriptor\": {\r\n           \"ActorTypeId\": \"Org\",\r\n            \"Length\": 0,\r\n            \"Type\": \"Unknown\",\r\n            \"SharedWithProvider\": false,\r\n            \"SharedByRequestor\": false,\r\n            \"CpnRequestorId\": 0,\r\n            \"Name\": \"\",\r\n            \"Options\": [],\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 1\r\n        },\r\n        \"ObjectId\": 408,\r\n        \"ObjectTypeId\": \"LeaseUser\",\r\n        \"Value\": \"232311\",\r\n        \"CurrencyTypeId\": \"Usd\",\r\n        \"Id\": 0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/CustomField2",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"CustomField2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put CustomField2",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\": [\r\n        \"*\"\r\n    ],\r\n    \"Entity\": {\r\n        \"Descriptor\": {\r\n            \"ActorTypeId\": \"Unknown\",\r\n            \"Length\": 0,\r\n            \"Type\": \"Unknown\",\r\n            \"SharedWithProvider\": \"None\",\r\n            \"SharedByRequestor\": \"None\",\r\n            \"CpnRequestorId\": 0,\r\n            \"Name\": \"\",\r\n            \"Options\": [],\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 2\r\n        },\r\n        \"ObjectId\": 407,\r\n        \"ObjectTypeId\": \"LeaseUser\",\r\n        \"Value\": \"23231_edit\",\r\n        \"CurrencyTypeId\": \"Unknown\",\r\n        \"Id\": 5\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/CustomField2",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"CustomField2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "Get Document",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Document?ID=5",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Document"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Document",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Document?ID=5",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Document"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Document",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\": {\r\n        \"ActorId\": 31716,\r\n        \"ActorTypeId\": \"WO\",\r\n        \"Description\": \"Received from CorrigoNet at 7.3.5 provider copy\",\r\n        \"Title\": \"Fax message\",\r\n        \"DocType\": {\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 1\r\n        },\r\n        \"StartDate\": \"2011-08-23T00:00:00\",\r\n        \"UpdatedDate\": \"2011-08-23T11:18:57\",\r\n        \"ExtensionId\": 0,\r\n        \"IsShared\": false,\r\n        \"IsPublic\": false,\r\n        \"StorageTypeId\": \"URL\",\r\n        \"DocUrl\": \"https://cdn.pixabay.com/photo/2022/02/05/08/13/tulip-6994245_1280.jpg\",\r\n        \"MimeType\": \"application/octet-stream\",\r\n        \"CreatedBy\": {\r\n            \"Id\": 593,\r\n            \"TypeId\": \"Provider\"\r\n        },\r\n        \"WonId\": 56575,\r\n        \"WonMemberId\": 4315,\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Document",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Document"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Document",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\" : [\"*\"] ,\r\n                \"Entity\": {\r\n              \"ActorId\": 17,\r\n        \"ActorTypeId\": \"WO\",\r\n        \"Description\": \"Edit\",\r\n        \"Title\": \"Roof 3\",\r\n        \"DocType\": {\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 3,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"StartDate\": \"2016-12-08T00:00:00\",\r\n        \"UpdatedDate\": \"2016-12-09T12:59:19\",\r\n        \"ExtensionId\": 35,\r\n        \"IsShared\": false,\r\n        \"IsPublic\": false,\r\n        \"StorageTypeId\": \"Cloud\",\r\n        \"DocUrl\": \"https://enterpriseam.s3.amazonaws.com/5631/30831a11-0d92-4ca8-a71b-4e9b0740537a/Roof 3.JPG\",\r\n        \"MimeType\": \"image/jpeg\",\r\n        \"UpdatedBy\": {\r\n            \"Id\": 154,\r\n            \"TypeId\": \"Employee\",\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"WonId\": 0,\r\n        \"WonMemberId\": 0,\r\n        \"ConcurrencyId\": 2,\r\n        \"Id\": 4,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n                }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Document",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Document"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "oauth2",
+				"oauth2": [
+					{
+						"key": "clientSecret",
+						"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+						"type": "string"
+					},
+					{
+						"key": "clientId",
+						"value": "ceapiclient.1.8926.fdc1",
+						"type": "string"
+					},
+					{
+						"key": "accessTokenUrl",
+						"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+						"type": "string"
+					},
+					{
+						"key": "challengeAlgorithm",
+						"value": "S256",
+						"type": "string"
+					},
+					{
+						"key": "grant_type",
+						"value": "client_credentials",
+						"type": "string"
+					},
+					{
+						"key": "addTokenTo",
+						"value": "header",
+						"type": "string"
+					},
+					{
+						"key": "client_authentication",
+						"value": "header",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "Get Location",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Location?ID=19943",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Location"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "19943"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Location",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Location?ID=19943",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Location"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "19943"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Location",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"entity\":{\r\n          \"Name\": \"Floor Drain - Dining Room_ARB\",\r\n        \"ModelId\": 1262,\r\n        \"Orphan\": true,\r\n        \"TypeId\": \"Regular\",\r\n        \"ParentId\": 1,\r\n        \"RootId\": 0,\r\n        \"IsTemplate\": false,\r\n        \"Documents\": [],\r\n        \"IsOffline\": true,\r\n        \"IsLocked\": false,\r\n        \"Attributes\": [],\r\n        \"Id\": 0,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Location",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Location",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\"Properties\" : [\"*\"] ,\r\n                \"Entity\":{\r\n          \"Name\": \"Floor Drain - Dining Room_ARB1_Edit\",\r\n        \"ModelId\": 1262,\r\n        \"Orphan\": true,\r\n        \"TypeId\": \"Regular\",\r\n        \"ParentId\": 1,\r\n        \"RootId\": 0,\r\n        \"IsTemplate\": false,\r\n        \"Documents\": [],\r\n        \"IsOffline\": true,\r\n        \"IsLocked\": false,\r\n        \"Attributes\": [],\r\n        \"Id\": 199432,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n                \r\n                }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Location",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Location"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Note",
+			"item": [
+				{
+					"name": "Get Note",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Note?ID=16",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Note"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Note?ID=16",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Note"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Note",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"Entity\":\r\n     {\r\n \"Body\":\"sample text\",\r\n \"WorkOrderId\":14389,\r\n \"NoteTypeId\":2,\r\n \"ActorId\": 316,\r\n        \"ActorTypeId\": \"Org\",\r\n \"CreatedAt\": \"2011-03-31T11:52:07\",\r\n        \"CreatedBy\": {\r\n            \"Id\": 538,\r\n            \"TypeId\": \"Employee\",\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n \"Id\":0\r\n }\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Note",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Note",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\" : [\"*\"] ,\r\n                \"Entity\": {\r\n                    \"Body\":\"sample text_ARB\",\r\n                    \"WorkOrderId\":14389,\r\n                    \"NoteTypeId\":2,\r\n                    \"ActorId\": 316,\r\n                    \"ActorTypeId\": \"Org\",\r\n                    \"CreatedAt\": \"2011-03-31T11:52:07\",\r\n                    \"CreatedBy\": {\r\n                                    \"Id\": 538,\r\n                                    \"TypeId\": \"Employee\",\r\n                                    \"PerformDeletion\": false,\r\n                                    \"IsNew\": false\r\n                                 },\r\n                    \"Id\":149\r\n }\r\n                \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Note",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Note"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Get Payment",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Payment?ID=3",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Payment"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Payment",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Payment?ID=3",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Payment"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Payment",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\":\r\n    {\r\n            \"CurrencyTypeId\": \"USD\",\r\n        \"Group\": {\r\n            \"DisplayAs\": \"\",\r\n            \"CpThemeId\": 0,\r\n            \"IsBillAcct\": false,\r\n            \"Number\": \"\",\r\n            \"PaymentTerms\": \"\",\r\n            \"PaymentNumberOfDays\": 0,\r\n            \"PaymentInstrustions\": \"\",\r\n            \"IsCreditHold\": false,\r\n            \"AccrualMargin\": 0,\r\n            \"SalesRep\": \"\",\r\n            \"IsTaxExempt\": false,\r\n            \"Balance\": 0.0,\r\n            \"PayDayType\": 0,\r\n            \"PayDayNumber\": 0,\r\n            \"IsSelfSelect\": false,\r\n            \"CurrencyTypeId\": \"Unknown\",\r\n            \"Users\": [],\r\n            \"Customers\": [],\r\n            \"Contacts\": [],\r\n            \"CustomFields\": [],\r\n            \"Notes\": [],\r\n            \"SynchronizeNte\": false,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 3,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Number\": \"1010\",\r\n        \"State\": \"Posted\",\r\n        \"Comments\": \"\",\r\n        \"Method\": \"Check\",\r\n        \"Reference\": \"some reference here\",\r\n        \"DtStamp\": \"2017-03-31T22:39:32\",\r\n        \"AmtPayment\": {\r\n            \"CurrencyTypeId\": \"USD\",\r\n            \"Value\": 315.4900\r\n        },\r\n        \"AmtBalance\": {\r\n            \"CurrencyTypeId\": \"USD\",\r\n            \"Value\": 0.0000\r\n        },\r\n        \"DtPosted\": \"2017-03-31T22:39:56\",\r\n        \"TimeSetId\": 0,\r\n        \"Items\": [],\r\n        \"ConcurrencyId\": 3,\r\n        \"Id\": 0,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Payment",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Payment",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\" : [\"*\"] ,\r\n                \"Entity\": \r\n    {\r\n            \"CurrencyTypeId\": \"USD\",\r\n        \"Group\": {\r\n            \"DisplayAs\": \"\",\r\n            \"CpThemeId\": 0,\r\n            \"IsBillAcct\": false,\r\n            \"Number\": \"\",\r\n            \"PaymentTerms\": \"\",\r\n            \"PaymentNumberOfDays\": 0,\r\n            \"PaymentInstrustions\": \"\",\r\n            \"IsCreditHold\": false,\r\n            \"AccrualMargin\": 0,\r\n            \"SalesRep\": \"\",\r\n            \"IsTaxExempt\": false,\r\n            \"Balance\": 0.0,\r\n            \"PayDayType\": 0,\r\n            \"PayDayNumber\": 0,\r\n            \"IsSelfSelect\": false,\r\n            \"CurrencyTypeId\": \"Unknown\",\r\n            \"Users\": [],\r\n            \"Customers\": [],\r\n            \"Contacts\": [],\r\n            \"CustomFields\": [],\r\n            \"Notes\": [],\r\n            \"SynchronizeNte\": false,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 3,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Number\": \"1010\",\r\n        \"State\": \"Posted\",\r\n        \"Comments\": \"\",\r\n        \"Method\": \"Check\",\r\n        \"Reference\": \"some reference here_ARB_edited\",\r\n        \"DtStamp\": \"2017-03-31T22:39:32\",\r\n        \"AmtPayment\": {\r\n            \"CurrencyTypeId\": \"USD\",\r\n            \"Value\": 315.4900\r\n        },\r\n        \"AmtBalance\": {\r\n            \"CurrencyTypeId\": \"USD\",\r\n            \"Value\": 0.0000\r\n        },\r\n        \"DtPosted\": \"2017-03-31T22:39:56\",\r\n        \"TimeSetId\": 0,\r\n        \"Items\": [],\r\n        \"ConcurrencyId\": 3,\r\n        \"Id\": 4,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Payment",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"item": [
+				{
+					"name": "Get Portfolio",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Portfolio?ID=1",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Portfolio"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Portfolio",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Portfolio?ID=2",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Portfolio"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Portfolio",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\":{\r\n         \"DisplayAs\": \"z-Div 2_ARB1\",\r\n        \"TypeId\": \"Grouping\",\r\n        \"ParentPortfolioId\": 0,\r\n        \"UseBizHours\": false,\r\n        \"UseHolidays\": false,\r\n        \"UseOnCall\": false,\r\n        \"UseEscalation\": false,\r\n        \"TurnTemplateId\": 0,\r\n        \"SlaValues\": [],\r\n        \"ConcurrencyId\": 2,\r\n        \"Id\": 0,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Portfolio",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Portfolio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Portfolio",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\" : [\"*\"] ,\r\n                \"Entity\": \r\n                {\r\n         \"DisplayAs\": \"z-Div 2_ARB_Edited\",\r\n        \"TypeId\": \"Grouping\",\r\n        \"ParentPortfolioId\": 0,\r\n        \"UseBizHours\": false,\r\n        \"UseHolidays\": false,\r\n        \"UseOnCall\": false,\r\n        \"UseEscalation\": false,\r\n        \"TurnTemplateId\": 0,\r\n        \"SlaValues\": [],\r\n        \"ConcurrencyId\": 2,\r\n        \"Id\": 79,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Portfolio",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Portfolio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Product",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Product?ID=1",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Product"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Product?ID=1",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Product"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Product",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\":{\r\n        \"DisplayAs\": \"Element HENNY PENNY_ARB3\",\r\n        \"PartName\": \"00010\",\r\n        \"Description\": \"Element HENNY PENNY_NEW\",\r\n        \"Discontinued\": false,\r\n        \"UnitOfMeasureId\": \"Unit\",\r\n        \"Comments\": \"\",\r\n        \"Manufacturer\": \"HENNY PENNY\",\r\n        \"PartNumber\": \"Product-D1\",\r\n        \"ScanCode\": \"\",\r\n        \"Category\": {\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 259,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Suppliers\": [],\r\n        \"CustomFields\": [],\r\n        \"Currencies\": [],\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 0,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Product",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Product",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\" : [\"*\"] ,\r\n                \"Entity\": {\r\n        \"DisplayAs\": \"Element HENNY PENNY_ARB\",\r\n        \"PartName\": \"00010\",\r\n        \"Description\": \"Element HENNY PENNY_Edit\",\r\n        \"Discontinued\": false,\r\n        \"UnitOfMeasureId\": \"Unit\",\r\n        \"Comments\": \"\",\r\n        \"Manufacturer\": \"HENNY PENNY\",\r\n        \"PartNumber\": \"Product-D1\",\r\n        \"ScanCode\": \"\",\r\n        \"Category\": {\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 259,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Suppliers\": [],\r\n        \"CustomFields\": [],\r\n        \"Currencies\": [],\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 3,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n                }\r\n                \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Product",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Product"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Get Task",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Task?ID=14389",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Task"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "14389"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/Task?ID=25362",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Task"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "25362"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post task",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\":\r\n    {\r\n         \"ModelId\": 1270,\r\n        \"DisplayAs\": \"Damageds\",\r\n        \"Preventive\": false,\r\n        \"Routine\": false,\r\n        \"Corrective\": false,\r\n        \"Default\": false,\r\n        \"Symptom\": true,\r\n        \"CompletionTime\": 0,\r\n        \"Specialty\": {\r\n            \"DisplayAs\": \"\",\r\n            \"WONServiceId\": 0,\r\n            \"Instructions\": \"\",\r\n            \"Currencies\": [],\r\n            \"IsNteAuto\": true,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 10014,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Priority\": {\r\n            \"IsEmergency\": false,\r\n            \"AcknowledgeInMinutes\": 0,\r\n            \"RespondInMinutes\": 0,\r\n            \"DueInMinutes\": 0,\r\n            \"Id\": 3,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"SelfHelpType\": \"Hyperlink\",\r\n        \"Instructions\": \"<a href=\\\"www.corrigo.com\\\" target=\\\"_blank\\\">www.corrigo.com</a>\",\r\n        \"SelfHelpContent\": \"http://www.youtube.com/watch?v=aBdubvErm6U\",\r\n        \"PeopleRequired\": 0,\r\n        \"SkillLevel\": 0,\r\n        \"GlAccount\": \"\",\r\n        \"Number\": \"\",\r\n        \"Currencies\": [],\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 0\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Task",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Task"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Task",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\" : [\"*\"] ,\r\n                \"Entity\":{\r\n        \"ModelId\": 1270,\r\n        \"DisplayAs\": \"Damaged_ARB\",\r\n        \"Preventive\": false,\r\n        \"Routine\": false,\r\n        \"Corrective\": false,\r\n        \"Default\": false,\r\n        \"Symptom\": true,\r\n        \"CompletionTime\": 0,\r\n        \"Specialty\": {\r\n            \"DisplayAs\": \"\",\r\n            \"WONServiceId\": 0,\r\n            \"Instructions\": \"\",\r\n            \"Currencies\": [],\r\n            \"IsNteAuto\": true,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 10013,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Priority\": {\r\n            \"IsEmergency\": false,\r\n            \"AcknowledgeInMinutes\": 0,\r\n            \"RespondInMinutes\": 0,\r\n            \"DueInMinutes\": 0,\r\n            \"Id\": 2,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"SelfHelpType\": \"Hyperlink\",\r\n        \"Instructions\": \"<a href=\\\"www.corrigo.com\\\" target=\\\"_blank\\\">www.corrigo.com</a>\",\r\n        \"SelfHelpContent\": \"http://www.youtube.com/watch?v=aBdubvErm6U\",\r\n        \"PeopleRequired\": 0,\r\n        \"SkillLevel\": 0,\r\n        \"GlAccount\": \"\",\r\n        \"Number\": \"\",\r\n        \"Currencies\": [],\r\n        \"IsRemoved\": false,\r\n        \"ConcurrencyId\": 5,\r\n        \"Id\": 25363,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n                }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/Task",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"Task"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TimeCard",
+			"item": [
+				{
+					"name": "Get TimeCard",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/TimeCard?ID=2000",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"TimeCard"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "2000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete TimeCard",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/TimeCard?ID=21",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"TimeCard"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post TimeCard",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\":\r\n    {\r\n          \"WeekStartDate\": \"2020-04-05T00:00:00\",\r\n        \"Employee\": {\r\n            \"FirstName\": \"\",\r\n            \"LastName\": \"\",\r\n            \"DisplayAs\": \"\",\r\n            \"AccessToAllWorkZones\": false,\r\n            \"LanguageId\": 0,\r\n            \"ActorTypeId\": \"Employee\",\r\n            \"Username\": \"\",\r\n            \"DtPwdChange\": \"0001-01-01T00:00:00\",\r\n            \"Instructions\": \"\",\r\n            \"WonMemberId\": 0,\r\n            \"WonLocationId\": 0,\r\n            \"WonServiceRadius\": 0,\r\n            \"IsElectronicPayment\": false,\r\n            \"ProviderStatusId\": \"NA\",\r\n            \"LabelId\": 0,\r\n            \"FreeTextAllowed\": false,\r\n            \"RadiusUnit\": \"Unknown\",\r\n            \"Password\": \"\",\r\n            \"Number\": \"\",\r\n            \"JobTitle\": \"\",\r\n            \"FederalId\": \"\",\r\n            \"ExternalId\": \"\",\r\n            \"ForcePasswordReset\": false,\r\n            \"TaxWarnOnly\": false,\r\n            \"PriceLists\": [],\r\n            \"CustomFields\": [],\r\n            \"BillAtZero\": false,\r\n            \"IsSupplier\": false,\r\n            \"ProviderTypeId\": \"Regular\",\r\n            \"ContactAddresses\": [],\r\n            \"Teams\": [],\r\n            \"WorkZones\": [],\r\n            \"Portfolios\": [],\r\n            \"CustomerGroups\": [],\r\n            \"Specialties\": [],\r\n            \"PayRates\": [],\r\n            \"StockLocations\": [],\r\n            \"Services\": [],\r\n            \"AlertSubscriptions\": [],\r\n            \"TaxExempt\": false,\r\n            \"LimitAssignmentByPortfolioId\": 0,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 5,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Flagged\": 0,\r\n        \"StatusId\": \"Pending\",\r\n        \"Week\": {\r\n            \"StartDate\": \"0001-01-01T00:00:00\",\r\n            \"EndDate\": \"0001-01-01T00:00:00\",\r\n            \"Id\": 737519,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 0,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/TimeCard",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"TimeCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put TimeCard",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Properties\": [\r\n        \"*\"\r\n    ],\r\n    \"Entity\": {\r\n       \"WeekStartDate\": \"2016-11-13T00:00:00\",\r\n        \"Employee\": {\r\n            \"FirstName\": \"\",\r\n            \"LastName\": \"\",\r\n            \"DisplayAs\": \"\",\r\n            \"AccessToAllWorkZones\": false,\r\n            \"LanguageId\": 0,\r\n            \"ActorTypeId\": \"Unknown\",\r\n            \"Username\": \"\",\r\n            \"DtPwdChange\": \"0001-01-01T00:00:00\",\r\n            \"Instructions\": \"\",\r\n            \"WonMemberId\": 0,\r\n            \"WonLocationId\": 0,\r\n            \"WonServiceRadius\": 0,\r\n            \"IsElectronicPayment\": false,\r\n            \"ProviderStatusId\": \"NA\",\r\n            \"LabelId\": 0,\r\n            \"FreeTextAllowed\": false,\r\n            \"RadiusUnit\": \"Unknown\",\r\n            \"Password\": \"\",\r\n            \"Number\": \"\",\r\n            \"JobTitle\": \"\",\r\n            \"FederalId\": \"\",\r\n            \"ExternalId\": \"\",\r\n            \"ForcePasswordReset\": false,\r\n            \"TaxWarnOnly\": false,\r\n            \"PriceLists\": [],\r\n            \"CustomFields\": [],\r\n            \"BillAtZero\": false,\r\n            \"IsSupplier\": false,\r\n            \"ProviderTypeId\": \"Regular\",\r\n            \"ContactAddresses\": [],\r\n            \"Teams\": [],\r\n            \"WorkZones\": [],\r\n            \"Portfolios\": [],\r\n            \"CustomerGroups\": [],\r\n            \"Specialties\": [],\r\n            \"PayRates\": [],\r\n            \"StockLocations\": [],\r\n            \"Services\": [],\r\n            \"AlertSubscriptions\": [],\r\n            \"TaxExempt\": false,\r\n            \"LimitAssignmentByPortfolioId\": 0,\r\n            \"IsRemoved\": false,\r\n            \"ConcurrencyId\": 0,\r\n            \"Id\": 154,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"Flagged\": 0,\r\n        \"StatusId\": \"Pending\",\r\n        \"Week\": {\r\n            \"StartDate\": \"0001-01-01T00:00:00\",\r\n            \"EndDate\": \"0001-01-01T00:00:00\",\r\n            \"Id\": 736280,\r\n            \"PerformDeletion\": false,\r\n            \"IsNew\": false\r\n        },\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 1,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/TimeCard",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"TimeCard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "StockLocation",
+			"item": [
+				{
+					"name": "Get StockLocation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/StockLocation?ID=1",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"StockLocation"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete StockLocation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com/api/v1/base/StockLocation?ID=2",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"StockLocation"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post StockLocation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Entity\":{\r\n         \"DisplayAs\": \"Arb_Sample_Edit1\",\r\n        \"Number\": \"Dummy12\",\r\n        \"TypeId\": \"StoreRoom\",\r\n        \"ShipToName\": \"\",\r\n        \"BillToName\": \"\",\r\n        \"DeliveryInstructions\": \"\",\r\n        \"Comments\": \"\",\r\n        \"AllowNegativeQty\": true,\r\n        \"MoneyId\": \"USD\",\r\n        \"TimeZoneId\": 20,\r\n        \"StreetAddresses\": [],\r\n        \"ContactAddresses\": [],\r\n        \"CustomFields\": [],\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 5,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/StockLocation",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"StockLocation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put StockLocation",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "clientSecret",
+									"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "ceapiclient.1.8926.fdc1",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+									"type": "string"
+								},
+								{
+									"key": "client_authentication",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"Properties\" : [\"*\"] ,\r\n                \"Entity\":{\r\n                     \"DisplayAs\": \"Arb_Sample_Edited\",\r\n        \"Number\": \"Dummy2\",\r\n        \"TypeId\": \"StoreRoom\",\r\n        \"ShipToName\": \"\",\r\n        \"BillToName\": \"\",\r\n        \"DeliveryInstructions\": \"\",\r\n        \"Comments\": \"\",\r\n        \"AllowNegativeQty\": true,\r\n        \"MoneyId\": \"USD\",\r\n        \"TimeZoneId\": 20,\r\n        \"StreetAddresses\": [],\r\n        \"ContactAddresses\": [],\r\n        \"CustomFields\": [],\r\n        \"ConcurrencyId\": 1,\r\n        \"Id\": 2,\r\n        \"PerformDeletion\": false,\r\n        \"IsNew\": false\r\n                }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce97c.corrigo.com//api/v1/base/StockLocation",
+							"protocol": "https",
+							"host": [
+								"am-ce97c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"v1",
+								"base",
+								"StockLocation"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "clientSecret",
+				"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "ceapiclient.1.8926.fdc1",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

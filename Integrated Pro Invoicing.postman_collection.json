@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "417db581-9695-4ec2-baf8-faf176016a7e",
+		"name": "Integrated Pro Invoicing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WorkOrderCost",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ApStatusId\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"1\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 2,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/WorkOrderCost",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"WorkOrderCost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tax Invoice Items",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n     \r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 20,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/Tax Invoice Items",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"Tax Invoice Items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ServicePros by Label",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"LabelId\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"0\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"OR\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/Employee",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ServicePro by ExternalId",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ExternalId\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"DU_EXTERNAL_ID\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n} \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce97c.corrigo.com/api/v1/query/Employee",
+					"protocol": "https",
+					"host": [
+						"am-ce97c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
