@@ -1,0 +1,905 @@
+{
+	"info": {
+		"_postman_id": "7f1196cb-c4b1-4673-a89d-02bb3dc00ee8",
+		"name": "WorkOrder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Workorder",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4Ljg3MjciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUdWUsIDI1IEphbiAyMDIyIDE1OjA4OjU2IEdNVCIsIi5leHBpcmVzIjoiVHVlLCAyNSBKYW4gMjAyMiAxNToyODo1NiBHTVQifX19<---->F95Kuzk_Ls6cqEbL-qff-cyPD14k_6NWGKCp8qZgsBlszRxkH2oWwirodhYbDttJse9_xejsyosJyrmnFI6fkXM8MscxvlDPpEzC2j294RqVKGYXLSBWXynd9NV50HAzppO2dbhSCSlaVpXUaNcV7imapqdqUXzAVzsyqdYl-1fVo_kW5QlpREerp8yoZCNi38wmHsrgDoCHj60fvOPMCbZ35qzuuc2Q58eBuDtSzzUZ3OTDkUVn3kcORuzYlNXjwsMwsRgrF5rSnq5Rl26Ks99d8XJMr2B7eup64c2cxzxFsVr6eyC2PJwG3VSVfUd0VIKd7_v1TSaGXJGOdwHBoA",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://am-ce98a.corrigo.com/api/v1/base/WorkOrder?ID=500",
+					"protocol": "https",
+					"host": [
+						"am-ce98a",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"base",
+						"WorkOrder"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "500"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET Workorder",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://am-ce98a.corrigo.com/api/v1/base/WorkOrder?ID=500",
+							"protocol": "https",
+							"host": [
+								"am-ce98a",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"base",
+								"WorkOrder"
+							],
+							"query": [
+								{
+									"key": "ID",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 07 Mar 2022 17:15:18 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1081"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Data\": {\n        \"Number\": \"ASN0060114\",\n        \"TypeCategory\": \"Request\",\n        \"WorkOrderCost\": {\n            \"Id\": 500\n        },\n        \"Priority\": {\n            \"Id\": 3\n        },\n        \"StatusId\": \"Completed\",\n        \"RequestorContact\": {\n            \"Id\": 1331\n        },\n        \"Access\": \"NotApplicable\",\n        \"MainAsset\": {\n            \"Id\": 12584\n        },\n        \"ShortLocation\": \"NHQ 03 East\",\n        \"TaskRefinement\": \"General Door Repair:Hardware:Desk 3E2-22M. I do not have a rubber stop behind my door, so when it is opened against wall, the lock engages and door gets locked. Can I get a rubber door stop installed?\",\n        \"WorkZone\": {\n            \"Id\": 6\n        },\n        \"Employee\": {\n            \"Id\": 202\n        },\n        \"Duration\": 0,\n        \"VendorNte\": {\n            \"CurrencyTypeId\": \"USD\",\n            \"Value\": 0\n        },\n        \"Specialty\": {\n            \"Id\": 10005\n        },\n        \"PoNumber\": \"\",\n        \"SubType\": {\n            \"Id\": 259\n        },\n        \"Customer\": {\n            \"Id\": 8\n        },\n        \"ContactName\": \"Joshua Baker / NHQ 3E2-22M\",\n        \"WonId\": 0,\n        \"IsWarranty\": false,\n        \"FlagId\": 0,\n        \"TimeZone\": 20,\n        \"CurrencyTypeId\": \"USD\",\n        \"LastActionDate\": \"2017-01-19T13:35:01\",\n        \"DtCreated\": \"2017-01-17T17:33:18\",\n        \"DtDue\": \"2017-01-23T08:00:09\",\n        \"LastActionDateUtc\": \"2017-01-19T19:35:01\",\n        \"CreatedDateUtc\": \"2017-01-17T23:33:18\",\n        \"DueDateUtc\": \"2017-01-23T14:00:09\",\n        \"LastAction\": {\n            \"Id\": 500\n        },\n        \"InductionAndSafetyStatusID\": \"NotApplicable\",\n        \"ConcurrencyId\": 15,\n        \"Id\": 500\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "POST Workorder",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMzUiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJGcmksIDE3IERlYyAyMDIxIDEzOjA1OjQ2IEdNVCIsIi5leHBpcmVzIjoiRnJpLCAxNyBEZWMgMjAyMSAxMzoyNTo0NiBHTVQifX19<---->uh9z3CUWa1i5BgAMMWrjykJ9AcascJo9azEcG7ZhvtQ9yLjeLGhuQW-xGKHWT9oepPxb4hhmQbLXtduzLgZs2wZqYR9i_po-x0Cj7fgFngX5ucw5JNekLDR1_3ModF2f7TuTNHhO7I5eSG3AwbjKSr3dU-93mnYUXXbP7FdgvOe99n1viDmPz8OPzOtxFjK8SWGdnjkpTGjEhFLrhfE9GlMcgHbzlud3J4KszLxNZ7-_fKIY5f1BUsxMuPU4LF-u7Mr_esXjvssQyLRm96GsiT2Afn81s9Q_tJFowzVddXSKYyUlsiMvfLh9K0KZldVzuZHOwEKN0Tx4vPNx84BXdA",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"Command\" : {\r\n      \"WorkOrder\" : {\r\n         \"Items\" : [\r\n            {\r\n               \"Asset\" : {\r\n                  \"Id\" : 12584\r\n               },\r\n               \"Task\" : {\r\n                  \"Id\" : 14389\r\n               }\r\n            }\r\n         ],\r\n         \"Contactid\":2,\r\n         \"TypeCategory\" : 4,     \r\n                \r\n         \"SubType\" : {\r\n            \"Id\" : 259\r\n         },\r\n         \"Customer\" : {\r\n            \"Id\" : 3\r\n         }\r\n      },\r\n      \"ComputeSchedule\" : true     \r\n   },\r\n   \"RequestId\" : \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce98c.corrigo.com/api/v1/cmd/Workorder/Create",
+					"protocol": "https",
+					"host": [
+						"am-ce98c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cmd",
+						"Workorder",
+						"Create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST Workorder",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Command\" : {\r\n      \"WorkOrder\" : {\r\n         \"Items\" : [\r\n            {\r\n               \"Asset\" : {\r\n                  \"Id\" : 12584\r\n               },\r\n               \"Task\" : {\r\n                  \"Id\" : 14389\r\n               }\r\n            }\r\n         ],\r\n         \"Contactid\":2,\r\n         \"TypeCategory\" : 4,     \r\n                \r\n         \"SubType\" : {\r\n            \"Id\" : 259\r\n         },\r\n         \"Customer\" : {\r\n            \"Id\" : 3\r\n         }\r\n      },\r\n      \"ComputeSchedule\" : true     \r\n   },\r\n   \"RequestId\" : \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce98c.corrigo.com/api/v1/cmd/Workorder/Create",
+							"protocol": "https",
+							"host": [
+								"am-ce98c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cmd",
+								"Workorder",
+								"Create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 16:54:14 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1079"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CommandResult\": {\n        \"Wo\": {\n            \"Number\": \"ASN0013663\",\n            \"TypeCategory\": \"Request\",\n            \"WorkOrderCost\": {\n                \"Id\": 388095\n            },\n            \"Priority\": {\n                \"Id\": 3\n            },\n            \"StatusId\": \"New\",\n            \"Access\": \"NotApplicable\",\n            \"MainAsset\": {\n                \"Id\": 12584\n            },\n            \"ShortLocation\": \"NHQ 03 East\",\n            \"TaskRefinement\": \"TN - NHQ (Nashville Headquarters):NHQ 03 East:Other\",\n            \"WorkZone\": {\n                \"Id\": 1\n            },\n            \"Duration\": 0,\n            \"VendorNte\": {\n                \"CurrencyTypeId\": \"USD\",\n                \"Value\": 0\n            },\n            \"Specialty\": {\n                \"Id\": 10095\n            },\n            \"PoNumber\": \"\",\n            \"SubType\": {\n                \"Id\": 259\n            },\n            \"Customer\": {\n                \"Id\": 3\n            },\n            \"ContactName\": \"\",\n            \"WonId\": 0,\n            \"IsWarranty\": false,\n            \"FlagId\": 0,\n            \"TimeZone\": 35,\n            \"CurrencyTypeId\": \"USD\",\n            \"LastActionDate\": \"2022-03-08T11:54:13.9831479\",\n            \"DtCreated\": \"2022-03-08T11:54:13.9831479\",\n            \"DtDue\": \"2022-03-25T15:00:00\",\n            \"DtAcknowledgeBy\": \"2022-03-11T09:00:00\",\n            \"AcknowledgeByUtc\": \"2022-03-11T14:00:00Z\",\n            \"LastActionDateUtc\": \"2022-03-08T16:54:13.9831479Z\",\n            \"CreatedDateUtc\": \"2022-03-08T16:54:13.9831479Z\",\n            \"DueDateUtc\": \"2022-03-25T19:00:00Z\",\n            \"DtOnSiteBy\": \"2022-03-15T15:00:00\",\n            \"DtUtcOnSiteBy\": \"2022-03-15T19:00:00Z\",\n            \"LastAction\": {\n                \"Id\": 388095\n            },\n            \"InductionAndSafetyStatusID\": \"NotApplicable\",\n            \"ConcurrencyId\": 1,\n            \"Id\": 388095\n        }\n    },\n    \"RequestId\": \"1234\"\n}"
+				}
+			]
+		},
+		{
+			"name": "PUT Workorder",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LjlhMzUiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJGcmksIDE3IERlYyAyMDIxIDE0OjEzOjI5IEdNVCIsIi5leHBpcmVzIjoiRnJpLCAxNyBEZWMgMjAyMSAxNDozMzoyOSBHTVQifX19<---->aHFB75oGZjG4TfJSmQMUIdlHWRi167J8nciJUYUXoBMFsQcscZ7sraigCk48JmP70pUV32Tdl13rBVS5JlBuXWqgn-3o8Y2GEloY5OzVDIR_cNncCNCFp7dp-YDBDEVIrrEbw7jOc7xy8nGMN5EFcGhxxScv0GNbZVQdw036H4qY2WcKlsvtndKx0fdZRL4lIbNWmesPT18YdQ8iPhKIJHIfxAP0l9NivoNdwI9huuWTOmKsnzm9Il6sBZD8xHXY7r73BmNzKlXmjv8qhmADQMGpvdjJcNVVe7l_XTqoxAc5rj5Se0sk5CfiJr3L0y7Dqg3K_a4tgGqP49Jq6dBgfw",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Properties\": [\"*\"],\r\n    \"Entity\": {\r\n        \"Id\": 1,\r\n        \"Comment\": \"Test 1\",\r\n        \"FirstName\": \"David\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce98c.corrigo.com/api/v1/base/WorkOrder",
+					"protocol": "https",
+					"host": [
+						"am-ce98c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"base",
+						"WorkOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Command Workorder",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4Ljg3MjciLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUaHUsIDI3IEphbiAyMDIyIDExOjA5OjEyIEdNVCIsIi5leHBpcmVzIjoiVGh1LCAyNyBKYW4gMjAyMiAxMToyOToxMiBHTVQifX19<---->YfeqPf_pdo_zlaoWcVbGkmBX6hVT3gokPyQjmzi_8kMBbt-339kQCHEr7HuOT8HnOQHaggMUJstddKoXJh58B10OdOkTN89iquXUwTepdAB7BtdAE-xIsOOqC2s-OTRZBtl8KZVDB1MmEtCFx7SgHCe_z7LT7UJPrnwS9a9fVRUu3iy86nrA_6cpq0mbhvG8OKQCfMsQn0SqjzSLhA3aEEMTLCSEb57t5M1fJdBqpwjAKisvXgKYqkkX1pYvu9kJmL0HGMYgC9TcS70bqmTU9Dp33vukNZV-J-DWJ2naHL3QXykqnh87i5hYsyHTjh4nXPtcODg-Z-VIQ--M5NdJZw",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"Command\" : {\r\n      \"WorkOrder\" : {\r\n         \"Items\" : [\r\n            {\r\n               \"Asset\" : {\r\n                  \"Id\" : 12584\r\n               },\r\n               \"Task\" : {\r\n                  \"Id\" : 14389\r\n               }\r\n            }\r\n         ],\r\n         \"ContactName\" : \"Store Manager or General Manager \",\r\n         \"ContactAddress\" : {\r\n            \"AddrTypeId\" : \"Contact\",\r\n            \"Address\" : \"214-555-5555\"\r\n         },\r\n         \"TypeCategory\" : 4,\r\n         \"Priority\" : {\r\n            \"Id\" : 1\r\n         },\r\n         \"RequestorContact\" : {\r\n            \"Id\" : 3\r\n         },\r\n         \"WorkZone\" : {\r\n            \"Id\" : 1\r\n         },\r\n         \"SubType\" : {\r\n            \"Id\" : 259\r\n         },\r\n         \"Customer\" : {\r\n            \"Id\" : 3\r\n         }\r\n      },\r\n      \"ComputeSchedule\" : true,\r\n      \"ComputeAssignment\" : true,\r\n      \"EmergencyDisabled\" : false,\r\n      \"Comment\" : \"Creation Comment here\"\r\n   },\r\n   \"RequestId\" : \"1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce98c.corrigo.com/api/v1/cmd/Workorder/Create",
+					"protocol": "https",
+					"host": [
+						"am-ce98c",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cmd",
+						"Workorder",
+						"Create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Command Workorder",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"Command\" : {\r\n      \"WorkOrder\" : {\r\n         \"Items\" : [\r\n            {\r\n               \"Asset\" : {\r\n                  \"Id\" : 12584\r\n               },\r\n               \"Task\" : {\r\n                  \"Id\" : 14389\r\n               }\r\n            }\r\n         ],\r\n         \"ContactName\" : \"Store Manager or General Manager \",\r\n         \"ContactAddress\" : {\r\n            \"AddrTypeId\" : \"Contact\",\r\n            \"Address\" : \"214-555-5555\"\r\n         },\r\n         \"TypeCategory\" : 4,\r\n         \"Priority\" : {\r\n            \"Id\" : 1\r\n         },\r\n         \"RequestorContact\" : {\r\n            \"Id\" : 3\r\n         },\r\n         \"WorkZone\" : {\r\n            \"Id\" : 1\r\n         },\r\n         \"SubType\" : {\r\n            \"Id\" : 259\r\n         },\r\n         \"Customer\" : {\r\n            \"Id\" : 3\r\n         }\r\n      },\r\n      \"ComputeSchedule\" : true,\r\n      \"ComputeAssignment\" : true,\r\n      \"EmergencyDisabled\" : false,\r\n      \"Comment\" : \"Creation Comment here\"\r\n   },\r\n   \"RequestId\" : \"1234\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce98c.corrigo.com/api/v1/cmd/Workorder/Create",
+							"protocol": "https",
+							"host": [
+								"am-ce98c",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"cmd",
+								"Workorder",
+								"Create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 17:11:46 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1161"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"CommandResult\": {\n        \"Wo\": {\n            \"Number\": \"ASN0013664\",\n            \"TypeCategory\": \"Request\",\n            \"WorkOrderCost\": {\n                \"Id\": 388096\n            },\n            \"Priority\": {\n                \"Id\": 3\n            },\n            \"StatusId\": \"New\",\n            \"RequestorContact\": {\n                \"Id\": 3\n            },\n            \"Access\": \"NotApplicable\",\n            \"MainAsset\": {\n                \"Id\": 12584\n            },\n            \"ShortLocation\": \"NHQ 03 East\",\n            \"TaskRefinement\": \"TN - NHQ (Nashville Headquarters):NHQ 03 East:Other\",\n            \"WorkZone\": {\n                \"Id\": 1\n            },\n            \"Employee\": {\n                \"Id\": 154\n            },\n            \"Duration\": 0,\n            \"VendorNte\": {\n                \"CurrencyTypeId\": \"USD\",\n                \"Value\": 0\n            },\n            \"Specialty\": {\n                \"Id\": 10095\n            },\n            \"PoNumber\": \"\",\n            \"SubType\": {\n                \"Id\": 259\n            },\n            \"Customer\": {\n                \"Id\": 3\n            },\n            \"ContactName\": \"Store Manager or General Manager\",\n            \"WonId\": 0,\n            \"IsWarranty\": false,\n            \"FlagId\": 0,\n            \"TimeZone\": 35,\n            \"CurrencyTypeId\": \"USD\",\n            \"LastActionDate\": \"2022-03-08T12:11:46.7577413\",\n            \"DtCreated\": \"2022-03-08T12:11:46.7577413\",\n            \"DtDue\": \"2022-03-25T15:30:00\",\n            \"DtAcknowledgeBy\": \"2022-03-11T09:30:00\",\n            \"AcknowledgeByUtc\": \"2022-03-11T14:30:00Z\",\n            \"LastActionDateUtc\": \"2022-03-08T17:11:46.7577413Z\",\n            \"CreatedDateUtc\": \"2022-03-08T17:11:46.7577413Z\",\n            \"DueDateUtc\": \"2022-03-25T19:30:00Z\",\n            \"DtOnSiteBy\": \"2022-03-15T15:30:00\",\n            \"DtUtcOnSiteBy\": \"2022-03-15T19:30:00Z\",\n            \"LastAction\": {\n                \"Id\": 388096\n            },\n            \"InductionAndSafetyStatusID\": \"NotApplicable\",\n            \"ConcurrencyId\": 1,\n            \"Id\": 388096\n        }\n    },\n    \"RequestId\": \"1234\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Query by WO ID",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJBdXRoZW50aWNhdGlvblR5cGUiOiJCZWFyZXIiLCJOYW1lQ2xhaW1UeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlJvbGVDbGFpbVR5cGUiOiJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIiwiQ2xhaW1zIjpbeyJUeXBlIjoiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZSIsIlZhbHVlIjoiY2VhcGljbGllbnQuMS4xODY4LmNjMTYiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9LHsiVHlwZSI6InVybjpvYXV0aDpzY29wZSIsIlZhbHVlIjoiIiwiVmFsdWVUeXBlIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEjc3RyaW5nIiwiSXNzdWVyIjoiTE9DQUwgQVVUSE9SSVRZIiwiT3JpZ2luYWxJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkifSx7IlR5cGUiOiJBdWQiLCJWYWx1ZSI6IjE4NjgiLCJWYWx1ZVR5cGUiOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSNzdHJpbmciLCJJc3N1ZXIiOiJMT0NBTCBBVVRIT1JJVFkiLCJPcmlnaW5hbElzc3VlciI6IkxPQ0FMIEFVVEhPUklUWSJ9XSwiUHJvcGVydGllcyI6eyJEaWN0aW9uYXJ5Ijp7Ii5pc3N1ZWQiOiJUaHUsIDIzIERlYyAyMDIxIDEzOjE5OjI3IEdNVCIsIi5leHBpcmVzIjoiVGh1LCAyMyBEZWMgMjAyMSAxMzozOToyNyBHTVQifX19<---->TEhFoKXzKy36D6OE_31_LF4g09mhg2kigv91I7bFE2YRLXyT_LFFDccv9RLIdRJ7OEipDwpvbtq-5VRkdHezpXC-Bo0PT0T7WfNm-KUqBObm1VPLuwmnnfgQ8eolLsMqyS9PDvRuZTEwJVcsk4y2pN1dEBwMMccmBBiLCnDIe5X81w0ACy9dRS9JuKQ5186qGlkgch9NlJSAMGOQ7a30j2Ga4xQlLusk65eYK3T9s-yNLTGo46RFafntE0LQW6HE8RzW8tPKN5-cbnNMZHCAWqiOSRGiqFQ4whPVP-o4Aqp3QdzeXb7wSyibNNX0Js1J3zW9eJtYRHEBVwVkoXJbYQ",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ID\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"1\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce98a.corrigo.com/api/v1/query/WorkOrder",
+					"protocol": "https",
+					"host": [
+						"am-ce98a",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"WorkOrder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Query by WO ID",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"ID\",\r\n            \"Operator\": \"Equal\",\r\n            \"Values\": [\"1\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce98a.corrigo.com/api/v1/query/WorkOrder",
+							"protocol": "https",
+							"host": [
+								"am-ce98a",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"query",
+								"WorkOrder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 17:14:16 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "994"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Entities\": [\n        {\n            \"Data\": {\n                \"Number\": \"ASN0010001\",\n                \"TypeCategory\": \"Request\",\n                \"WorkOrderCost\": {\n                    \"Id\": 1\n                },\n                \"Priority\": {\n                    \"Id\": 3\n                },\n                \"StatusId\": \"New\",\n                \"RequestorContact\": {\n                    \"Id\": 3\n                },\n                \"Access\": \"NotApplicable\",\n                \"MainAsset\": {\n                    \"Id\": 2489\n                },\n                \"ShortLocation\": \"FLOR 01 Core\",\n                \"TaskRefinement\": \"Locks/Keys:Supply Duplicate Keys:Marked new keys for the Admit. offices. Distributed new office keys to the Admit staff.\",\n                \"WorkZone\": {\n                    \"Id\": 1\n                },\n                \"Employee\": {\n                    \"Id\": 154\n                },\n                \"Duration\": 0,\n                \"VendorNte\": {\n                    \"CurrencyTypeId\": \"USD\",\n                    \"Value\": 0\n                },\n                \"Specialty\": {\n                    \"Id\": 10021\n                },\n                \"PoNumber\": \"\",\n                \"SubType\": {\n                    \"Id\": 259\n                },\n                \"Customer\": {\n                    \"Id\": 3\n                },\n                \"ContactName\": \"*Asurion ASOC\",\n                \"WonId\": 0,\n                \"IsWarranty\": false,\n                \"FlagId\": 0,\n                \"TimeZone\": 35,\n                \"CurrencyTypeId\": \"USD\",\n                \"LastActionDate\": \"2022-02-17T02:24:10.46\",\n                \"DtCreated\": \"2016-11-17T16:22:36\",\n                \"DtDue\": \"2016-11-22T16:30:23\",\n                \"LastActionDateUtc\": \"2022-02-17T07:24:10.46\",\n                \"CreatedDateUtc\": \"2016-11-17T21:22:36\",\n                \"DueDateUtc\": \"2016-11-22T21:30:23\",\n                \"LastAction\": {\n                    \"Id\": 1\n                },\n                \"InductionAndSafetyStatusID\": \"NotApplicable\",\n                \"ConcurrencyId\": 11,\n                \"Id\": 1\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Query by Last Action",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "667ADEA22F77F585AC357B9F0A047201C881C98320D7C77A8C208DA6972B47E62A67804A54A7BC3EF86023991CFAED1EE4207C2BF1FA528FB263160EEA4EEE81",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "ceapiclient.1.8926.fdc1",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth-pro-v2.corrigo.com/OAuth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "CompanyName",
+						"value": "RDC CE Sandbox",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"LastActionDateUtc\",\r\n            \"Operator\": \"GreaterOrEqual\",\r\n            \"Values\": [\"2021-11-04T17:30:00\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://am-ce98a.corrigo.com/api/v1/query/WorkOrder",
+					"protocol": "https",
+					"host": [
+						"am-ce98a",
+						"corrigo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"query",
+						"WorkOrder"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Query by Last Action",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "CompanyName",
+								"value": "RDC CE Sandbox",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"QueryExpression\":\r\n  {\r\n      \"Criteria\": {\r\n        \"Conditions\": [\r\n          {\r\n            \"PropertyName\": \"LastActionDateUtc\",\r\n            \"Operator\": \"GreaterOrEqual\",\r\n            \"Values\": [\"2021-11-04T17:30:00\"]\r\n          }\r\n        ],\r\n        \"FilterOperator\": \"And\"\r\n      },\r\n      \"Distinct\": true,\r\n      \"PropertySet\": { \"Properties\" : [\"*\"]},\r\n      \"Count\": 1,\r\n      \"FirstResultIndex\": 0\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://am-ce98a.corrigo.com/api/v1/query/WorkOrder",
+							"protocol": "https",
+							"host": [
+								"am-ce98a",
+								"corrigo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"query",
+								"WorkOrder"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 08 Mar 2022 17:16:16 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "994"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"Entities\": [\n        {\n            \"Data\": {\n                \"Number\": \"ASN0010001\",\n                \"TypeCategory\": \"Request\",\n                \"WorkOrderCost\": {\n                    \"Id\": 1\n                },\n                \"Priority\": {\n                    \"Id\": 3\n                },\n                \"StatusId\": \"New\",\n                \"RequestorContact\": {\n                    \"Id\": 3\n                },\n                \"Access\": \"NotApplicable\",\n                \"MainAsset\": {\n                    \"Id\": 2489\n                },\n                \"ShortLocation\": \"FLOR 01 Core\",\n                \"TaskRefinement\": \"Locks/Keys:Supply Duplicate Keys:Marked new keys for the Admit. offices. Distributed new office keys to the Admit staff.\",\n                \"WorkZone\": {\n                    \"Id\": 1\n                },\n                \"Employee\": {\n                    \"Id\": 154\n                },\n                \"Duration\": 0,\n                \"VendorNte\": {\n                    \"CurrencyTypeId\": \"USD\",\n                    \"Value\": 0\n                },\n                \"Specialty\": {\n                    \"Id\": 10021\n                },\n                \"PoNumber\": \"\",\n                \"SubType\": {\n                    \"Id\": 259\n                },\n                \"Customer\": {\n                    \"Id\": 3\n                },\n                \"ContactName\": \"*Asurion ASOC\",\n                \"WonId\": 0,\n                \"IsWarranty\": false,\n                \"FlagId\": 0,\n                \"TimeZone\": 35,\n                \"CurrencyTypeId\": \"USD\",\n                \"LastActionDate\": \"2022-02-17T02:24:10.46\",\n                \"DtCreated\": \"2016-11-17T16:22:36\",\n                \"DtDue\": \"2016-11-22T16:30:23\",\n                \"LastActionDateUtc\": \"2022-02-17T07:24:10.46\",\n                \"CreatedDateUtc\": \"2016-11-17T21:22:36\",\n                \"DueDateUtc\": \"2016-11-22T21:30:23\",\n                \"LastAction\": {\n                    \"Id\": 1\n                },\n                \"InductionAndSafetyStatusID\": \"NotApplicable\",\n                \"ConcurrencyId\": 11,\n                \"Id\": 1\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessTokenUrl",
+				"value": "https://oauth-pro-v2.corrigo-qa.com/OAuth/token",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "JWTCustToken",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "A56405129DCA3105EB72C1A807080EC89137B09200AC819CA8512C7DF4689AD13C68F09EE12F42C62F7D0C7021310D73BB182363E2F43EF8E3686A4C9DB41183",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "ceapiclient.1.1868.9a07",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
